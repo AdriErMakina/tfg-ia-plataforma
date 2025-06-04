@@ -30,6 +30,17 @@ A modern React template for web applications and games, featuring React 18, Vite
 - `pnpm run dev` - Start development server
 - `pnpm run lint` - Lint source files
 
+### Environment Variables
+
+Create a `.env` file in the project root and provide your OpenAI key:
+
+```bash
+VITE_OPENAI_API_KEY=sk-your-key
+```
+
+Vite exposes variables starting with `VITE_` to the client code so the
+application can access the key via `import.meta.env.VITE_OPENAI_API_KEY`.
+
 ## Tech Stack
 
 - React
